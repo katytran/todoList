@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Roboto"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <input id="search" placeholder="Search..." autocomplete="off" />
+        <h1 id="app-title"></h1>
+      </nav>
+    </header>
+
+    <main id="app">
+      <section id="board">
+        <div id="infos">
+          <!-- <div class="logo"><img src="logo-12.png" alt="CS Logo" /></div> -->
+          <div id="infos-content">
+            <div class="infos-title">FTW Bootcamp</div>
+            <div class="infos-description">From Cheetah with love</div>
+          </div>
+        </div>
+        <div id="add-task-form">
+          <input id="task-value" placeholder="Add task" />
+          <button id="add-task">+</button>
+        </div>
+      </section>
+
+      <section id="columns">
+        <div class="column dropzone">
+          <h3 class="column-title">Backlog</h3>
+          <ul class="tasks" id="tasks-added">
+            <!-- <li class="task fill" draggable="true">
+              <div class="task-content">Write the weekly note</div>
+              <div class="trash">&times;</div>
+            </li> -->
+          </ul>
+        </div>
+        <div class="column dropzone">
+          <h3 class="column-title">In Progress</h3>
+          <ul class="tasks"></ul>
+        </div>
+        <div class="column dropzone">
+          <h3 class="column-title">Review</h3>
+          <ul class="tasks"></ul>
+        </div>
+        <div class="column dropzone">
+          <h3 class="column-title">Done</h3>
+          <ul class="tasks"></ul>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
